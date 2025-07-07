@@ -1,0 +1,11 @@
+<div class="face-snap-card">
+  <h2>{{faceSnapData.title}}</h2>
+  <img src='{{faceSnapData.imgUrl}}' alt="">
+  <p>Mis en ligne le {{faceSnapData.created_at | date: 'd MMMM yyyy, à HH:mm'}}</p>
+  @if (faceSnapData.location) {
+    <p>{{ faceSnapData.location }}</p>
+  }
+  <p>{{faceSnapData.description}}</p>
+  <button (click)="onLike()" [ngStyle]="{color:isLikedByUser?'rgb(255,0,100)':'rgb(0,0,0)'}" [ngClass]="{liked: isLikedByUser}">
+    ❤️{{faceSnapData.likes}}</button>
+</div>

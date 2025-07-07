@@ -1,0 +1,25 @@
+.face-snap-card{
+  width: 10%;
+  border: solid 3px black;
+  border-radius: 50px;
+  background-color: lightblue;
+  padding: 1.5em 3em 2em;
+  margin: 2em;
+  h2{
+    border-bottom: solid aliceblue 3px;
+    -webkit-border-bottom-right-radius: 10px;
+  }
+  p{
+    border-bottom: solid 2px aliceblue;
+    -webkit-border-bottom-right-radius: 5px;
+    padding-bottom: .5em;
+  }
+  img{
+    width: 100%;
+    border: solid 2px aliceblue;
+  }
+
+  .liked{
+
+  }
+}
